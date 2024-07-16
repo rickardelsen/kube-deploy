@@ -1,0 +1,10 @@
+services:
+  kubedeploy:
+    image: rickardelsen/kubedeploy:latest
+    ports:
+      - 3000:3000
+    environment:
+      - KUBE_TOKEN
+      - DEPLOYMENT_URL
+      - SERVICE_URL
+      - INGRESS_URL
